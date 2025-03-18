@@ -1,0 +1,93 @@
+* {
+  magin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #48dbfb;
+}
+
+#main-menu {
+  display: flex;
+  justify-content: center;
+}
+
+nav #main-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+}
+
+nav #main-menu li a:hover {
+  background-color: #ff6b6b;
+  transition: all 0.3s;
+}
+
+#toggle {
+  display: none;
+  background: #353b48;
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#hinh1 {
+  width: 300px;
+  height: 289px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.infor {
+  max-width: 600px;
+  align-items: center;
+}
+
+#P1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* Khoảng cách giữa ảnh và chữ */
+  max-width: 1000px;
+  margin: 50px auto;
+  position: relative;
+  top: -20px;
+  /* Điều chỉnh giá trị âm để kéo ảnh lên */
+}
+
+footer {
+  background-color: #48dbfb;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  position: relative;
+  top: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  #main-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  #toggle {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  #P1 {
+    flex-direction: column;
+  }
+}
